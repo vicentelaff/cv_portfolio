@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =============== HERO BANNER =============== */
+.section-hero {
+    background-image: url(../Exports_iOS/blurred.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* =============== A PROPOS =============== */
+.img-a-propos {
+    width: 100vw;
+    height: 26rem;
+    background-image: url(../Exports_iOS/photo_profil.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-description-a-propos {
+    background: #372E3F;
+}
