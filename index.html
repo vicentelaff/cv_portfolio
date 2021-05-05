@@ -262,7 +262,9 @@
                     items: 1,
                     loop: true,
                     margin: 10,
-                    autoplay: false,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
                     responsiveClass: true,
                     responsive: {
                         0: {
@@ -276,6 +278,12 @@
                         }
                     }
                 });
+                $('.play').on('click', function () {
+                    owl.trigger('play.owl.autoplay', [3000])
+                })
+                $('.stop').on('click', function () {
+                    owl.trigger('stop.owl.autoplay')
+                })
             });
         </script>
 
