@@ -151,7 +151,7 @@ p {
 .card {
     background-color: transparent;
     width: 70vw;
-    height: 70vh;
+    height: 450px;
 }
 
 .card-title {
