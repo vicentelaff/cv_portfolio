@@ -150,7 +150,8 @@ p {
 
 .card {
     background-color: transparent;
-    flex: 1;
+    width: 70vw;
+    height: 70vh;
 }
 
 .card-title {
@@ -167,28 +168,24 @@ p {
     color: white;
     line-height: 27px;
     text-align: start;
-    word-break: break-all;
 }
 
 .card-img-top {
-    height: 200px;
-    width: 100%;
     background: #471A69;
+    height: 40%;
 }
 
 .card-img-top img {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-body {
     background: #7A2DB5;
+    height: 60%;
 }
 
-.card-body p {
-    text-align: justify;
-}
 
 /* =============== PORTFOLIO =============== */
 
