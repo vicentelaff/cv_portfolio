@@ -9,300 +9,284 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
+
     <title>Vicente L. - Portfolio</title>
 </head>
 
 <body>
     <!-- ======================== NAVBAR ======================== -->
 
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Vicente L.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">À propos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Éducation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Diplômes</a></li>
+                            <li><a class="dropdown-item" href="#">Udemy</a></li>
+                            <li><a class="dropdown-item" href="#">Compétences</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <!-- ======================== HERO BANNER ======================== -->
-    <div class="section-hero">
+    <div class="section-hero d-flex flex-column justify-content-center align-items-center col-12">
         <h1 class="nom-hero">VICENTE LAFFARGUE</h1>
         <h3 class="metier-hero">DÉVELOPPEUR WEB JUNIOR</h3>
     </div>
 
     <!-- ======================== A PROPOS ======================== -->
-    <div class="section-a-propos">
+    <div class="section-a-propos col-12">
         <div class="img-a-propos"></div>
-        <div class="container-description-a-propos">
-            <h1 class="titre-section">À propos...</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat delectus suscipit tempora animi
-                eum ex blanditiis, eligendi praesentium, repudiandae dicta repellendus ratione saepe cumque magnam?
-                Ipsam tempora illum, deleniti ducimus sunt qui quia, debitis rem repellat, voluptas dolorum? Rerum,
-                alias! Fugiat quas natus vero, voluptatibus possimus saepe repudiandae tempora!</p>
+        <div class="container-description-a-propos d-flex justify-content-center">
+            <div class="description-a-propos mt-3 col-10">
+                <h1 class="titre-section">À propos<span class="detail">...</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat
+                    <span class="detail">delectus suscipit tempora</span>
+                    animi eum ex blanditiis, eligendi praesentium,
+                    <span class="detail">repudiandae dicta repellendus</span>
+                    ratione saepe cumque magnam?
+                    Ipsam tempora illum,
+                    <span class="detail">deleniti ducimus sunt qui quia,</span>
+                    debitis rem repellat, voluptas dolorum? Rerum,
+                    alias! Fugiat quas natus vero, voluptatibus possimus
+                    <span class="detail">saepe repudiandae tempora!</span></p>
+            </div>
         </div>
     </div>
 
 
     <!-- ======================== COMPETENCES ======================== -->
 
-    <div class="section-competences bg-secondary">
-        <div class="container-formations">
-            <div class="container-diplomes">
-                <h1 class="titre-section">Diplômes</h1>
-                <img src="/Exports_iOS/dc_logo.svg" alt="DIGITAL CAMPUS">
-                <h3>Digital Campus, Toulouse</h3>
-                <p>Développement web et mobile, Bac +2.</p>
-                <button class="btn btn-warning">Télécharger mon CV</button>
+    <div class="section-competences pb-5 col-12">
+        <div class="container-formations d-flex flex-column mx-auto col-10">
+            <div class="container-diplomes d-flex flex-column align-items-center text-center mt-5">
+                <h1 class="titre-section mb-5">Diplômes</h1>
+                <img class="mb-3" src="/Exports_iOS/dc_logo.svg" alt="DIGITAL CAMPUS">
+                <h1 class="titre-education">Digital Campus, Toulouse</h1>
+                <p class="detail">Développement web et mobile, Bac +2.</p>
+                <button class="btn btn-primary mt-3">Télécharger mon CV</button>
             </div>
-            <div class="container-udemy">
-                <h1 class="titre-section">Udemy</h1>
-                <img src="/Exports_iOS/Icon awesome-adobe.svg" alt="ADOBE: AFTER EFFECTS">
-                <h3>Adobe: After Effects</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deleniti!</p>
-                <img src="/Exports_iOS/Icon awesome-adobe.svg" alt="ADOBE: AFTER EFFECTS">
-                <h3>Adobe: After Effects</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deleniti!</p>
-                <img src="/Exports_iOS/Icon awesome-adobe.svg" alt="ADOBE: AFTER EFFECTS">
-                <h3>Adobe: After Effects</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deleniti!</p>
-                <button class="btn btn-warning">Mes certifications</button>
+            <hr style="height:2px;border-radius:100px;" class="detail my-5">
+            <div class="container-udemy d-flex flex-column align-items-center text-center">
+                <h1 class="titre-section mb-5">Udemy</h1>
+                <img class="mb-3" src="/Exports_iOS/Icon awesome-adobe.svg" alt="ADOBE: AFTER EFFECTS">
+                <h1 class="titre-education">Adobe: After Effects</h1>
+                <p class="detail mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deleniti!
+                </p>
+                <img class="mb-3" src="/Exports_iOS/Icon awesome-adobe.svg" alt="ADOBE: AFTER EFFECTS">
+                <h1 class="titre-education">Adobe: After Effects</h1>
+                <p class="detail mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deleniti!
+                </p>
+                <img class="mb-3" src="/Exports_iOS/Icon awesome-adobe.svg" alt="ADOBE: AFTER EFFECTS">
+                <h1 class="titre-education">Adobe: After Effects</h1>
+                <p class="detail mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deleniti!
+                </p>
+                <button class="btn btn-primary">Mes certifications</button>
             </div>
+            <hr style="height:1.5px;border-radius:100px;" class="detail my-5">
         </div>
-        <div class="container-competences">
-            <h1 class="titre-section">Compétences</h1>
-            <!--Carousel Wrapper-->
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                <!--Controls-->
-                <div class="controls-top">
-                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
-                            class="fa fa-chevron-left"></i></a>
-                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-                            class="fa fa-chevron-right"></i></a>
-                </div>
-                <!--/.Controls-->
-
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
-
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-
-                    <!--First slide-->
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <!-- CARD -->
-                                <div class="card" style="width: 12rem;">
-                                    <img src="/Exports_iOS/Icon awesome-adobe.svg" class="card-img-top" alt="Adobe">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Suite Adobe</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Aliquid, iusto. Quas
-                                            corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card" style="width: 12rem;">
-                                    <img src="/Exports_iOS/Icon awesome-bootstrap.svg" class="card-img-top"
-                                        alt="Bootsrap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Bootstrap</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Aliquid, iusto. Quas
-                                            corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card" style="width: 12rem;">
-                                    <img src="/Exports_iOS/Icon awesome-php.svg" class="card-img-top" alt="PHP">
-                                    <div class="card-body">
-                                        <h5 class="card-title">PHP</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Aliquid, iusto. Quas
-                                            corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="container-competences d-flex flex-column mx-auto align-items-center col-10">
+            <h1 class="titre-section mb-5">Compétences</h1>
+            <div class="wrapper-grid justify-content-start align-items-center col-10">
+                <div class="slider d-flex owl-carousel">
+                    <div class="card item mx-2">
+                        <img src="/Exports_iOS/Icon awesome-adobe.svg" class="card-img-top py-3 px-3" alt="Adobe">
+                        <div class="card-body">
+                            <h5 class="card-title">Suite Adobe</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+                                iusto. Quas
+                                corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
+                            </p>
                         </div>
-
                     </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card" style="width: 12rem;">
-                                    <img src="/Exports_iOS/Icon awesome-python.svg" class="card-img-top" alt="Python">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Aliquid, iusto. Quas
-                                            corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card" style="width: 12rem;">
-                                    <img src="/Exports_iOS/Icon awesome-wordpress.svg" class="card-img-top"
-                                        alt="Wordpress">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Wordpress</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Aliquid, iusto. Quas
-                                            corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card" style="width: 12rem;">
-                                    <img src="/Exports_iOS/Icon ionic-logo-javascript.svg" class="card-img-top"
-                                        alt="Javascript">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Javascript</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Aliquid, iusto. Quas
-                                            corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card item mx-2">
+                        <img src="/Exports_iOS/Icon awesome-bootstrap.svg" class="card-img-top py-3 px-3"
+                            alt="Bootsrap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Aliquid, iusto. Quas
+                                corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
+                            </p>
                         </div>
-
                     </div>
-                    <!--/.Second slide-->
-
+                    <div class="card item mx-2">
+                        <img src="/Exports_iOS/Icon awesome-php.svg" class="card-img-top py-3 px-3" alt="PHP">
+                        <div class="card-body">
+                            <h5 class="card-title">PHP</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Aliquid, iusto. Quas
+                                corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card item mx-2">
+                        <img src="/Exports_iOS/Icon awesome-python.svg" class="card-img-top py-3 px-3" alt="Python">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Aliquid, iusto. Quas
+                                corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card item mx-2">
+                        <img src="/Exports_iOS/Icon awesome-wordpress.svg" class="card-img-top py-3 px-3"
+                            alt="Wordpress">
+                        <div class="card-body">
+                            <h5 class="card-title">Wordpress</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Aliquid, iusto. Quas
+                                corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card item mx-2">
+                        <img src="/Exports_iOS/Icon ionic-logo-javascript.svg" class="card-img-top py-3 px-3"
+                            alt="Javascript">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Aliquid, iusto. Quas
+                                corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <!--/.Slides-->
-
             </div>
-            <!--/.Carousel Wrapper-->
-
-
-
-
-
-
         </div>
     </div>
 
 
     <!-- ======================== PORTFOLIO ======================== -->
-    <div class="section-portfolio bg-primary">
-        <h1 class="titre-section">Portfolio</h1>
-        <!--Carousel Wrapper-->
-        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-            <!--Controls-->
-            <div class="controls-top">
-                <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
-                        class="fa fa-chevron-left"></i></a>
-                <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-                        class="fa fa-chevron-right"></i></a>
+    <div class="section-portfolio col-12">
+        <h1 class="titre-section text-center py-4">Portfolio</h1>
+        <div class="grid col-12">
+            <div class="item-portfolio"
+                style="background-image: url(https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
             </div>
-            <!--/.Controls-->
 
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-                <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                <li data-target="#multi-item-example" data-slide-to="1"></li>
-                <li data-target="#multi-item-example" data-slide-to="2"></li>
-            </ol>
-            <!--/.Indicators-->
-
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-
-                <!--First slide-->
-                <div class="carousel-item active">
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="./Exports_iOS/portfolio-img-1.svg" alt="Card image cap">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top"
-                                    src="./Exports_iOS/portfolio-img-1.svg"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top"
-                                    src="./Exports_iOS/portfolio-img-1.svg"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--/.First slide-->
-
-                <!--Second slide-->
-                <div class="carousel-item">
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-2">
-                                <img class="card-img-top"
-                                    src="./Exports_iOS/portfolio-img-1.svg"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top"
-                                    src="./Exports_iOS/portfolio-img-1.svg"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top"
-                                    src="./Exports_iOS/portfolio-img-1.svg"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--/.Second slide-->
+            <div class="item-portfolio"
+                style="background-image: url(https://images.pexels.com/photos/209717/pexels-photo-209717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
             </div>
-            <!--/.Slides-->
+
+            <div class="item-portfolio"
+                style="background-image: url(https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+            </div>
+
+            <div class="item-portfolio"
+                style="background-image: url(https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+            </div>
+
+            <div class="item-portfolio"
+                style="background-image: url(https://images.pexels.com/photos/209717/pexels-photo-209717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+            </div>
         </div>
-        <!--/.Carousel Wrapper-->
-    </div>
 
-    <!-- ======================== FOOTER ======================== -->
+        <!-- ======================== FOOTER ======================== -->
 
-    <div class="footer">
-        <h1 class="titre-section">Contact</h1>
-    </div>
+        <div class="footer d-flex flex-column align-items-center py-3 col-12">
+            <h1 class="titre-section text-center">Contact</h1>
+            <form action="" class="contact-form col-10">
+                <div class="">
+                    <div class="input-block mt-2">
+                        <input placeholder="Prénom et nom" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="input-block mt-2">
+                        <input placeholder="E-mail" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="input-block mt-2">
+                        <input placeholder="Sujet" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="input-block textarea mt-2">
+                        <textarea placeholder="Votre message..." rows="3" type="text" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-secondary mt-3">Envoyer</button>
+                </div>
+            </form>
+        </div>
 
 
 
 
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+        <script>
+            $(document).ready(function () {
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    items: 1,
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 2,
+                        },
+                        1200: {
+                            items: 4,
+                        }
+                    }
+                });
+                $('.play').on('click', function () {
+                    owl.trigger('play.owl.autoplay', [2000])
+                })
+                $('.stop').on('click', function () {
+                    owl.trigger('stop.owl.autoplay')
+                })
+            });
+        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>

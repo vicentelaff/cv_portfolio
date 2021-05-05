@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper-grid {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #272727;
+    overflow: hidden;
+}
+
+.card {
+    border-color: #272727;
+    flex: 1;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    background: #471A69;
+}
+
+.card-img-top img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    background: #7A2DB5;
+}
+
+.card-body p {
+    text-align: justify;
+}

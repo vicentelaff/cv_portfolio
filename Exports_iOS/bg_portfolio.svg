@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1939" height="720" viewBox="0 0 1939 720">
+  <g id="bg_portfolio" transform="translate(0 -2300)">
+    <rect id="bg_container" width="1920" height="720" transform="translate(0 2300)" fill="#fff"/>
+    <g id="dots">
+      <line id="Line_1" data-name="Line 1" x2="1920" transform="translate(14.5 2313.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="9" stroke-dasharray="0 30"/>
+      <line id="Line_1-2" data-name="Line 1" x2="1920" transform="translate(14.5 2359.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="8.6" stroke-dasharray="0 30"/>
+      <line id="Line_1-3" data-name="Line 1" x2="1920" transform="translate(14.5 2405.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="8.2" stroke-dasharray="0 30"/>
+      <line id="Line_1-4" data-name="Line 1" x2="1920" transform="translate(14.5 2451.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="7.8" stroke-dasharray="0 30"/>
+      <line id="Line_1-5" data-name="Line 1" x2="1920" transform="translate(14.5 2497.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="7.4" stroke-dasharray="0 30"/>
+      <line id="Line_1-6" data-name="Line 1" x2="1920" transform="translate(14.5 2543.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="7" stroke-dasharray="0 30"/>
+      <line id="Line_1-7" data-name="Line 1" x2="1920" transform="translate(14.5 2589.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="6.6" stroke-dasharray="0 30"/>
+      <line id="Line_1-8" data-name="Line 1" x2="1920" transform="translate(14.5 2635.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="6.2" stroke-dasharray="0 30"/>
+      <line id="Line_1-9" data-name="Line 1" x2="1920" transform="translate(14.5 2681.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="5.8" stroke-dasharray="0 30"/>
+      <line id="Line_1-10" data-name="Line 1" x2="1920" transform="translate(14.5 2727.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="5.4" stroke-dasharray="0 30"/>
+      <line id="Line_1-11" data-name="Line 1" x2="1920" transform="translate(14.5 2773.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="5" stroke-dasharray="0 30"/>
+      <line id="Line_1-12" data-name="Line 1" x2="1920" transform="translate(14.5 2819.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="4.6" stroke-dasharray="0 30"/>
+      <line id="Line_1-13" data-name="Line 1" x2="1920" transform="translate(14.5 2865.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="4.2" stroke-dasharray="0 30"/>
+      <line id="Line_1-14" data-name="Line 1" x2="1920" transform="translate(14.5 2911.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="3.8" stroke-dasharray="0 30"/>
+      <line id="Line_1-15" data-name="Line 1" x2="1920" transform="translate(14.5 2957.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="3.4" stroke-dasharray="0 30"/>
+      <line id="Line_1-16" data-name="Line 1" x2="1920" transform="translate(14.5 3003.5)" fill="none" stroke="#471a69" stroke-linecap="round" stroke-width="3" stroke-dasharray="0 30"/>
+    </g>
+  </g>
+</svg>
