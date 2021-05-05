@@ -262,31 +262,20 @@
                     items: 1,
                     loop: true,
                     margin: 10,
-                    autoplay: true,
-                    autoplayTimeout: 2000,
-                    autoplayHoverPause: true,
+                    autoplay: false,
                     responsiveClass: true,
                     responsive: {
                         0: {
                             items: 1,
-                            nav:true
                         },
                         768: {
                             items: 2,
-                            nav:true
                         },
                         1200: {
                             items: 4,
-                            nav:false
                         }
                     }
                 });
-                $('.play').on('click', function () {
-                    owl.trigger('play.owl.autoplay', [2000])
-                })
-                $('.stop').on('click', function () {
-                    owl.trigger('stop.owl.autoplay')
-                })
             });
         </script>
 

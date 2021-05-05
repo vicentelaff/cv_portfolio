@@ -1,38 +1,30 @@
+/* external css: flickity.css */
+
 * {
-    padding: 0;
-    margin: 0;
-}
-
-.wrapper-grid {
-    display: grid;
-    height: 100%;
-    place-items: center;
-    text-align: center;
-    background: #272727;
-    overflow: hidden;
-}
-
-.card {
-    border-color: #272727;
-    flex: 1;
-}
-
-.card-img-top {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
     height: 200px;
-    width: 100%;
-    background: #471A69;
-}
-
-.card-img-top img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.card-body {
-    background: #7A2DB5;
-}
-
-.card-body p {
-    text-align: justify;
-}
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }

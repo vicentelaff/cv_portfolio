@@ -20,69 +20,15 @@
 
 <body>
 
-    <div class="wrapper-grid">
-        <div class="slider d-flex owl-carousel">
-            <div class="card item mx-2">
-                <img src="./Exports_iOS/Icon awesome-adobe.svg" class="card-img-top py-3 px-3" alt="Adobe">
-                <div class="card-body">
-                    <h5 class="card-title">Suite Adobe</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Aliquid, iusto. Quas
-                        corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                    </p>
-                </div>
-            </div>
-            <div class="card item mx-2">
-                <img src="./Exports_iOS/Icon awesome-bootstrap.svg" class="card-img-top py-3 px-3" alt="Bootsrap">
-                <div class="card-body">
-                    <h5 class="card-title">Bootstrap</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Aliquid, iusto. Quas
-                        corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                    </p>
-                </div>
-            </div>
-            <div class="card item mx-2">
-                <img src="./Exports_iOS/Icon awesome-php.svg" class="card-img-top py-3 px-3" alt="PHP">
-                <div class="card-body">
-                    <h5 class="card-title">PHP</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Aliquid, iusto. Quas
-                        corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                    </p>
-                </div>
-            </div>
-            <div class="card item mx-2">
-                <img src="./Exports_iOS/Icon awesome-python.svg" class="card-img-top py-3 px-3" alt="Python">
-                <div class="card-body">
-                    <h5 class="card-title">Python</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Aliquid, iusto. Quas
-                        corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                    </p>
-                </div>
-            </div>
-            <div class="card item mx-2">
-                <img src="./Exports_iOS/Icon awesome-wordpress.svg" class="card-img-top py-3 px-3" alt="Wordpress">
-                <div class="card-body">
-                    <h5 class="card-title">Wordpress</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Aliquid, iusto. Quas
-                        corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                    </p>
-                </div>
-            </div>
-            <div class="card item mx-2">
-                <img src="./Exports_iOS/Icon ionic-logo-javascript.svg" class="card-img-top py-3 px-3" alt="Javascript">
-                <div class="card-body">
-                    <h5 class="card-title">Javascript</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Aliquid, iusto. Quas
-                        corporis animi voluptas facilis minus? Laudantium veritatis debitis tenetur.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <p><code>wrapAround: true</code></p>
+
+    <!-- Flickity HTML init -->
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
     </div>
 
 
@@ -92,38 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                items: 3,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 2,
-                    },
-                    1000: {
-                        items: 4,
-                    }
-                }
-            });
-            $('.play').on('click', function () {
-                owl.trigger('play.owl.autoplay', [1000])
-            })
-            $('.stop').on('click', function () {
-                owl.trigger('stop.owl.autoplay')
-            })
-        });
-    </script>
-
+    <!-- // external js: flickity.pkgd.js -->
 
 </body>
 
