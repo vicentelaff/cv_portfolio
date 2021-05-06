@@ -140,7 +140,7 @@ p {
 .card {
     background-color: transparent;
     width: 70vw;
-    height: 450px;
+    height: 70vh;
 }
 
 .card-title {
@@ -172,7 +172,7 @@ p {
 
 .card-body {
     background: #7A2DB5;
-    height: 60%;
+    /* height: 60%; */
 }
 
 /* =============== A PROPOS =============== */
