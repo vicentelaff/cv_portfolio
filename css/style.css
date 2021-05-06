@@ -12,8 +12,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #272727;
+}
+
 a {
-    text-decoration: none;
+    color: #7A2DB5;
 }
 
 h1 {
@@ -81,6 +85,7 @@ p {
 
 /* =============== HERO BANNER =============== */
 .section-hero {
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
     background-image: url(../Exports_iOS/bg_hero.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,26 +105,6 @@ p {
     color: #ffd700;
 }
 
-
-
-/* =============== A PROPOS =============== */
-.img-a-propos {
-    width: 100vw;
-    height: 26rem;
-    background-image: url(../Exports_iOS/photo_profil.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.container-description-a-propos {
-    background: #372E3F;
-}
-
-.section-a-propos h1,
-p {
-    text-shadow: 0 3px 4px #27272750;
-}
-
 /* =============== COMPETENCES =============== */
 
 .section-competences {
@@ -131,12 +116,16 @@ p {
     line-height: 32px;
 }
 
-.container-diplomes img {
-    width: 30vw;
+.container-diplomes>img {
+    width: 25vw;
 }
 
 .container-competences {
     overflow: hidden;
+}
+
+.container-udemy>img {
+    width: 25vw;
 }
 
 .wrapper-grid {
@@ -186,11 +175,36 @@ p {
     height: 60%;
 }
 
+/* =============== A PROPOS =============== */
+.section-a-propos {
+    background-color: #fff;
+    clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.section-a-propos h1,
+p {
+    text-shadow: 0 3px 4px #27272750;
+}
+
+.img-a-propos {
+    width: 100vw;
+    height: 26rem;
+    background-image: url(../Exports_iOS/photo_profil.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-description-a-propos {
+    background: #471A69;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+}
+
 
 /* =============== PORTFOLIO =============== */
 
 .section-portfolio {
     background-color: #fff;
+    margin-top: -1px;
 }
 
 .section-portfolio>.titre-section {
