@@ -65,6 +65,23 @@ p {
     color: white;
 }
 
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    h3 {
+        font-size: 27px;
+        line-height: 27px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
 /* =============== NAVBAR =============== */
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
@@ -90,7 +107,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 80vh;
+    height: 95vh;
 }
 
 .section-hero>* {
@@ -105,6 +122,12 @@ p {
     color: #ffd700;
 }
 
+@media only screen and (min-width: 768px) {
+    .nom-hero {
+        letter-spacing: 3px;
+    }
+}
+
 /* =============== COMPETENCES =============== */
 
 .section-competences {
@@ -116,16 +139,16 @@ p {
     line-height: 32px;
 }
 
-.container-diplomes>img {
-    width: 25vw;
+.logo-ecole>img {
+    width: 75px;
 }
 
-.container-competences {
+.logo-udemy {
+    width: 75px;
+}
+
+/* .container-competences {
     overflow: hidden;
-}
-
-.container-udemy>img {
-    width: 25vw;
 }
 
 .wrapper-grid {
@@ -139,8 +162,8 @@ p {
 
 .card {
     background-color: transparent;
-    width: 70vw;
-    height: 70vh;
+    width: 220px;
+    height: 500px;
 }
 
 .card-title {
@@ -172,7 +195,31 @@ p {
 
 .card-body {
     background: #7A2DB5;
-    /* height: 60%; */
+} */
+
+@media only screen and (min-width: 768px) {
+    .titre-education {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .logo-ecole {
+        width: 95px;
+    }
+
+    .logo-udemy {
+        width: 95px;
+    }
+
+    /* .card {
+        width: 250px;
+    } */
+}
+
+@media only screen and (min-width: 992px) {
+    /* .card {
+        width: 300px;
+    } */
 }
 
 /* =============== A PROPOS =============== */
@@ -189,14 +236,13 @@ p {
 .img-a-propos {
     width: 100vw;
     height: 26rem;
-    background-image: url(../Exports_iOS/photo_profil.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: cover;
 }
 
 .container-description-a-propos {
-    background: #471A69;
+    background: #272727;
     clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    margin-top: -1px;
 }
 
 
