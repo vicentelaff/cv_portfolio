@@ -237,6 +237,7 @@ p {
     width: 100vw;
     height: 26rem;
     object-fit: cover;
+    object-position: left top;
 }
 
 .container-description-a-propos {
