@@ -20,7 +20,7 @@ $(document).ready(function () {
         ResCarouselSize();
     });
 
-    //this function define the size of the items
+    //this function defines the size of the items
     function ResCarouselSize() {
         var incno = 0;
         var dataItems = ("data-items");
@@ -66,7 +66,7 @@ $(document).ready(function () {
     }
 
 
-    //this function used to move the items
+    //this function is used to move the items
     function ResCarousel(e, el, s) {
         var leftBtn = ('.leftLst');
         var rightBtn = ('.rightLst');
@@ -95,7 +95,7 @@ $(document).ready(function () {
         $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
     }
 
-    //It is used to get some elements from btn
+    //This function is used to get some elements from btn
     function click(ell, ee) {
         var Parent = "#" + $(ee).parent().attr("id");
         var slide = $(Parent).attr("data-slide");

@@ -1,5 +1,5 @@
 * {
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
     box-sizing: border-box;
 }
@@ -10,6 +10,7 @@ body {
 
 a {
     color: #7A2DB5;
+    text-decoration: underline;
 }
 
 h1 {
@@ -48,12 +49,24 @@ p {
     color: #272727;
 }
 
+.btn-primary:hover {
+    background-color: goldenrod;
+    border-color: transparent;
+    color: #272727;
+}
+
 .btn-secondary {
     background-color: #7A2DB5;
     box-shadow: 0 3px 3px #272727;
     border-color: transparent;
     font-size: 21px;
     font-weight: 600;
+    color: white;
+}
+
+.btn-secondary:hover{
+    background-color: #471A69;
+    border-color: transparent;
     color: white;
 }
 
@@ -78,6 +91,10 @@ p {
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 6px black;
+}
+
+.navbar a {
+    text-decoration: none;
 }
 
 .dropdown-menu {
@@ -135,10 +152,6 @@ p {
     width: 75px;
 }
 
-.separateur-accordion {
-    opacity: 1;
-}
-
 .MultiCarousel {
     float: left;
     overflow: hidden;
@@ -156,33 +169,70 @@ p {
     float: left;
 }
 
-.MultiCarousel .MultiCarousel-inner .item>div {
+/* .MultiCarousel .MultiCarousel-inner .item>div {
     text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 50px;
     background: #f1f1f1;
     color: #666;
-}
+} */
 
 .MultiCarousel .leftLst,
 .MultiCarousel .rightLst {
     position: absolute;
-    border-radius: 50%;
-    top: calc(50% - 20px);
+    /* border-radius: 100%; */
+    top: calc(90% - 20px);
 }
 
 .MultiCarousel .leftLst {
-    left: 0;
+    left: -8px;
+    font-size: 30px;
+    color: white;
+    opacity: .8;
+    text-shadow: 0 1px 3px white;
+    background: rgba(0, 0, 0, 0.0);
 }
 
 .MultiCarousel .rightLst {
-    right: 0;
+    right: -8px;
+    font-size: 30px;
+    color: white;
+    opacity: .8;
+    text-shadow: 0 1px 3px white;
+    background: rgba(0, 0, 0, 0.0);
 }
 
 .MultiCarousel .leftLst.over,
 .MultiCarousel .rightLst.over {
     pointer-events: none;
-    background: #ccc;
+    opacity: 0;
+    /* background: transparent; */
+}
+
+.card {
+    height: 480px;
+    margin: 0 1vw;
+    background-color: #471A69;
+    border-style: hidden;
+    border-radius: 50%;
+    
+}
+
+.card-img-top {
+    height: 30%;
+}
+
+.card-body {
+    background-color: #9d3ae8;
+    text-shadow: 0 1px 3px white;
+    /* border-radius: 2%; */
+}
+
+.card-text {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color: white;
+    line-height: 27px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -208,7 +258,7 @@ p {
 /* =============== A PROPOS =============== */
 .section-a-propos {
     background-color: #fff;
-    clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    /* clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); */
     padding: 0 0;
 }
 
@@ -227,7 +277,7 @@ p {
 
 .container-description-a-propos {
     background: #272727;
-    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    /* clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%); */
     margin-top: -1px;
 }
 
@@ -280,8 +330,8 @@ p {
 /* styling code */
 
 .grid {
-    margin: 5px auto;
-    max-width: 1000px;
+    margin: 0px auto;
+    /* max-width: 1000px; */
 }
 
 .grid>.item-portfolio {
